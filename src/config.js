@@ -1,0 +1,1 @@
+export const bottomMenu = ["About me", "Projects", "Contact"]
