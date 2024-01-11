@@ -1,7 +1,7 @@
 import React from 'react'
 import useAppRoutes from '@hooks/useAppRoutes'
-import Button from '@core-ui/Button'
 import { NavLink } from 'react-router-dom'
+import Button from '@core-ui/Button/Button'
 
 export default function BottomNav() {
   const routes = useAppRoutes()
