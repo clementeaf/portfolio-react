@@ -10,7 +10,7 @@ export default function Projects() {
       </div>
       <div className="flex flex-col items-start justify-start">
         <div className="flex flex-col w-full items-start justify-start gap-4">
-          <button className="flex w-full text-[22px] w-full border-b border-black/30 gap-4" type='button' onClick={() => setOpenDetails(!openDetails)}>Authentication module</button>
+          <button className="flex w-full text-[22px] border-b border-black/30 gap-4" type='button' onClick={() => setOpenDetails(!openDetails)}>Authentication module</button>
           <div className={`${openDetails ? 'h-full' : 'h-0'} overflow-hidden ease-in-out duration-300`}>
             {openDetails && <DetailProjectContent />}
           </div>
