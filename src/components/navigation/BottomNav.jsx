@@ -13,7 +13,7 @@ export default function BottomNav() {
             <NavLink to={path} key={id}>
                 {(({isActive}) => (
                     <>
-                        <Button children={name}/>
+                        <Button children={name} isActive={isActive}/>
                     </>
                 ))}
             </NavLink>
