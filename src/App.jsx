@@ -1,14 +1,9 @@
-import Button from './core-ui/Button'
-import { bottomMenu } from './config'
-import Header from './core-ui/Header'
-import { Route, Routes } from 'react-router'
-import useAppRoutes from './hooks/useAppRoutes'
-import BottomNav from './components/navigation/BottomNav'
-import { Suspense } from 'react'
 
-const buttonsRow = bottomMenu.map((content, index) => (
-  <Button key={index} children={content} />
-))
+import Header from '@core-ui/Header'
+import { Route, Routes } from 'react-router'
+import useAppRoutes from '@hooks/useAppRoutes'
+import BottomNav from '@components/navigation/BottomNav'
+import { Suspense } from 'react'
 
 function App() {
   const routes = useAppRoutes()
@@ -19,7 +14,6 @@ function App() {
         <Header />
         <div className="flex flex-col w-full h-full border-b border-black pb-4 mt-2">
           <div className="flex h-[700px] justify-start items-start pt-14">
-            {/* <Projects /> */}
             <Suspense>
               <Routes>
                 {routes.map(
