@@ -12,6 +12,7 @@ export default defineConfig({
       '@core-ui': path.resolve(__dirname, './src/core-ui'),
       '@pages': path.resolve(__dirname, './src/pages'),
       '@utils': path.resolve(__dirname, './src/utils'),
+      '@hooks': path.resolve(__dirname, './src/hooks')
     },
   },
 })
