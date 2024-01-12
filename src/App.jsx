@@ -1,5 +1,4 @@
 
-import Header from '@core-ui/Header'
 import { Route, Routes } from 'react-router'
 import useAppRoutes from '@hooks/useAppRoutes'
 import BottomNav from '@components/navigation/BottomNav'
